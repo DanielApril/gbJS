@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 2</title>
+</head>
+<body>
+
+	<style>
+		body {
+			font-family: monospace;
+		}
+		th, td {
+			padding: 4px 8px;
+			border: 1px solid grey;
+		}
+		section + section {
+			margin-top: 100px;
+			padding-top: 100px;
+			border-top: 1px solid lightgrey;
+		}
+	</style>
+
+	<section>
+		<h1>3. Объявить две целочисленные переменные a и b и задать им произвольные начальные значения. Затем написать скрипт,
+		который работает по следующему принципу:</h1>
+		<ul>
+			<li>если a и b положительные, вывести их разность;</li>
+			<li>если а и b отрицательные, вывести их произведение;</li>
+			<li>если а и b разных знаков, вывести их сумму; ноль можно считать положительным числом.</li>
+		</ul>
+
+		<pre><code>
+var a = +prompt("Введите первое число"), b = +prompt("Введите второе число"), result;
+if (a * b < 0) {
+	result = a + b;
+} else {
+	if (a >= 0) {
+		result = a - b;
+	} else {
+		result = a * b;
+	}
+}
+alert(result);
+		</code></pre>
+	</section>
+
+	<script>
+		var a = +prompt("Введите первое число"), b = +prompt("Введите второе число"), result;
+
+		if (a * b < 0) {
+			result = a + b;
+		} else {
+			if (a >= 0) {
+				result = a - b;
+			} else {
+				result = a * b;
+			}
+		}
+		alert(result);
+	</script>
+</body>
+</html>

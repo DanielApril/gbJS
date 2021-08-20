@@ -9,13 +9,23 @@
 <body>
 
 	<style>
+		body {
+			font-family: monospace;
+		}
 		th, td {
 			padding: 4px 8px;
 			border: 1px solid grey;
 		}
+		section + section {
+			margin-top: 100px;
+			padding-top: 100px;
+			border-top: 1px solid lightgrey;
+		}
 	</style>
-	<p>
-		<pre>
+	<section>
+		<p>
+			<h1>1. Дан код:</h1>
+			<pre>
 var a = 1, b = 1, c, d;
 c = ++a; alert(c); // 2
 d = b++; alert(d); // 1
@@ -23,11 +33,10 @@ c = (2+ ++a); alert(c); // 5
 d = (2+ b++); alert(d); // 4
 alert(a); // 3
 alert(b); // 3
-		</pre>
-		Почему код даёт именно такие результаты?
-	</p>
+			</pre>
+			Почему код даёт именно такие результаты?
+		</p>
 
-	<main>
 		<table>
 			<thead>
 				<tr>
@@ -72,8 +81,15 @@ alert(b); // 3
 				</tr>
 			</tbody>
 		</table>
-	</main>
+	</section>
 
-	<script></script>
+	<section>
+		<h1>2. Чему будет равен x в примере ниже?</h1>
+		<pre><code>
+var a = 2;
+var x = 1 + (a *= 2);
+		</code></pre>
+		<code>Из условия a = 2, тогда a *= 2 == 2 * 2 == 4 => x = 1 + 4 = 5</code>
+	</section>
 </body>
 </html>
