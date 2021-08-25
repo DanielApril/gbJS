@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 2</title>
+</head>
+<body>
+
+	<style>
+		body {
+			font-family: monospace;
+		}
+		section + section {
+			margin-top: 100px;
+			padding-top: 100px;
+			border-top: 1px solid lightgrey;
+		}
+	</style>
+
+	<section>
+		<h1>5. Реализовать основные 4 арифметические операции в виде функций с двумя параметрами. Обязательно использовать оператор return.</h1>
+	</section>
+
+	<script>
+		function summ(a, b) {
+			return (a + b);
+		}
+
+		function diff(a, b) {
+			return (a - b);
+		}
+
+		function mult(a , b) {
+			return (a * b);
+		}
+
+		function div(a, b) {
+			return (a / b);
+		}
+
+		var x = Math.floor(Math.random() * 11), y = Math.floor(Math.random() * 11);
+
+		console.log("summ =", summ(x, y));
+		console.log("diff =", diff(x, y));
+		console.log("mult =", mult(x, y));
+		console.log("div =", div(x, y));
+	</script>
+</body>
+</html>
